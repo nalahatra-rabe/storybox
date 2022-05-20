@@ -1,0 +1,217 @@
+.Connexion {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../../assets/images/1014.jpg);
+    .Connexion-header {
+        position: relative;
+        width: 60vw;
+        height: 80vh;
+        background: #FFF;
+        border-radius: 10px;
+        overflow: hidden;
+        .Title {
+            height: 50px;
+            text-align: center;
+            color: var(--primary);
+            font-weight: 900;
+            font-size: 40px;
+            font-family: 'GilRoy ExtraBold', sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+            margin-top: 30px;
+            align-items: center;
+            span {
+                color: var(--secondary);
+            }
+        }
+        .Content {
+            height: calc(100% - 50px);
+            background: var(--background);
+            align-items: center;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            .Content-panel {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                flex-direction: column;
+                img {
+                    width: 400px;
+                    height: 400px;
+                }
+                .Btn {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    nav {
+                        width: 100%;
+                        border: none;
+                        font-size: 16px;
+                        color: var(--secondary);
+                        font-weight: 900;
+                        cursor: pointer;
+                        text-align: center;
+                        background: transparent;
+                        margin-left: 20px;
+                        padding: 15px 0;
+                        position: relative;
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                        &:last-child {
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                width: 100%;
+                                height: 5px;
+                                background: var(--secondary);
+                                bottom: 0;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .Content-registre {
+                width: calc(100% - 50%);
+                color: var(--secondary);
+                padding: 0 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .Registre-form {
+                    display: flex;
+                    flex-direction: column;
+                    .Offre {
+                        display: flex;
+                        justify-content: end;
+                        padding: 20px;
+                        label {
+                            color: var(--text-color);
+                            text-align: end;
+                            font-size: 16px;
+                            font-weight: 900;
+                            font-family: 'GilRoy ExtraBold', sans-serif;
+                        }
+                    }
+                    h2 {
+                        color: var(--text-color);
+                        font-size: 20px;
+                        font-family: 'GilRoy ExtraBold', sans-serif;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                    span {
+                        color: var(--text-semi-dark);
+                        font-size: 14px;
+                        padding: 10px;
+                        text-align: center;
+                        a {
+                            text-decoration: none;
+                            color: var(--fine-text);
+                            margin: 5px;
+                        }
+                    }
+                    form {
+                        .Input {
+                            display: flex;
+                            flex-direction: column;
+                            padding: 5px;
+                            label {
+                                font-size: 14px;
+                                color: var(--text-color);
+                                font-weight: bold;
+                            }
+                            input {
+                                border-radius: 5px;
+                                border: 1px solid rgba(24, 24, 24, .5);
+                                height: 40px;
+                                padding: 5px;
+                            }
+                            select {
+                                height: 40px;
+                            }
+                        }
+                        .Check {
+                            width: 100%;
+                            padding: 10px;
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+                        button {
+                            width: 100%;
+                            border: none;
+                            background: var(--primary);
+                            font-size: 16px;
+                            padding: 15px 0;
+                            margin-top: 20px;
+                            color: #FFF;
+                            font-weight: 900;
+                            cursor: pointer;
+                        }
+                    }
+                    .Bar {
+                        width: 100%;
+                        position: relative;
+                        padding: 20px;
+                        display: none;
+                        .Barre {
+                            width: 100%;
+                            height: 2px;
+                            background: #EEE;
+                        }
+                        span {
+                            position: absolute;
+                            width: 30px;
+                            height: 40px;
+                            background: #FFF;
+                            left: calc( 50% - 15px);
+                            top: calc( 50% - 18px);
+                            text-align: center;
+                        }
+                    }
+                    nav {
+                        text-align: center;
+                        color: var(--text-semi-dark);
+                        margin-top: 10px;
+                        display: none;
+                        margin: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:950px) {
+    .Connexion {
+        .Connexion-header {
+            width: 80vw;
+            height: 100%;
+            .Content {
+                flex-direction: column;
+                .Content-panel {
+                    display: none;
+                }
+                .Content-registre {
+                    .Registre-form {
+                        .Bar {
+                            display: block;
+                        }
+                        nav {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

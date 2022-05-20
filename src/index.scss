@@ -1,0 +1,47 @@
+:root {
+    --primary: #ED156d;
+    --secondary: #111f67;
+    --grey-background: #f5f5ff;
+}
+
+[data-theme='light'] {
+    --primary: #ED156d;
+    --secondary: #111f67;
+    --grey-background: #f5f5ff;
+}
+
+// Custome Scroll Bar //
+::-webkit-scrollbar-track {
+    background: #ddd;
+}
+
+@font-face {
+    font-family: 'GilRoy ExtraBold';
+    src: url("./assets/fonts/Gilroy/Gilroy-ExtraBold.otf");
+}
+
+@font-face {
+    font-family: 'GilRoy Light';
+    src: url("./assets/fonts/Gilroy/Gilroy-Light.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'GilRoy ExtraBold';
+    // border: 1px solid red;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

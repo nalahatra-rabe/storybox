@@ -1,0 +1,171 @@
+.Files {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .Files-title {
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        .Icon {
+            flex: 15;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+                color: var(--secondary);
+            }
+        }
+        .Name {
+            flex: 85;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            h4 {
+                text-align: center;
+                font-size: 16px;
+                color: var(--secondary);
+                font-family: 'GilRoy ExtraBold', sans-serif;
+                font-weight: bolder;
+            }
+        }
+    }
+    .Files-bar {
+        width: 100%;
+        height: 2px;
+        background: rgba(0, 0, 0, .03);
+    }
+    .Files-Icon {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        i {
+            font-size: 150px;
+            color: rgba(255, 0, 0, .5);
+            padding: 40px 0;
+        }
+        div {
+            // text-align: justify;
+            padding: 30px 0;
+            animation: fade 1s;
+            h4 {
+                color: var(--secondary);
+                font-size: 14px;
+                font-weight: bold;
+                font-family: 'GilRoy ExtraBold', sans-serif;
+            }
+            span {
+                color: var(--secondary);
+                font-family: 'GilRoy ExtraBold', sans-serif;
+                font-weight: bold;
+                font-size: 12px;
+                .upload_time {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+    .Files-desc {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        opacity: 0;
+        animation: fade 1s .2s forwards;
+        h4 {
+            text-align: justify;
+            color: var(--fine-text);
+            font-size: 16px;
+            font-family: 'GilRoy ExtraBold', sans-serif;
+            font-weight: bolder;
+        }
+        p {
+            color: var(--secondary);
+            font-size: 13px;
+            font-family: 'GilRoy ExtraBold', sans-serif;
+            font-weight: 800;
+            padding: 20px 0;
+        }
+    }
+    .Files-shared {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        h4 {
+            text-align: start;
+            color: var(--secondary);
+            font-size: 16px;
+            font-family: 'GilRoy ExtraBold', sans-serif;
+            font-weight: bolder;
+        }
+        .Card {
+            display: flex;
+            padding: 5px 0;
+            .Icon {
+                flex: 15;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                div {
+                    width: 30px;
+                    height: 30px;
+                    background: var(--button-color);
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h4 {
+                        color: var(--background);
+                        text-align: center;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .Name {
+                flex: 75;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                span {
+                    color: var(--text-color);
+                    font-size: 14px;
+                    font-family: 'GilRoy ExtraBold', sans-serif;
+                    font-weight: bolder;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .Files-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        .Btn {
+            flex: 35;
+            button {
+                padding: 15px 20px;
+                outline: 0;
+                border: 0;
+                background: var(--primary);
+                color: #fff;
+                opacity: 0;
+                animation: fade 1s .3s forwards;
+                i {
+                    padding: 0 10px 0 0;
+                }
+            }
+        }
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
